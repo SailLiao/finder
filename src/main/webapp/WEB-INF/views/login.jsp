@@ -1,3 +1,4 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -35,9 +36,9 @@
 						</div>
 					</div>
 					<div class="form-actions">
-						<a href="#" tabindex="5" class="btn pull-left btn-link text-muted">Forgot password?</a>
-						<a href="#" tabindex="6" class="btn btn-link text-muted">Sign Up</a>
-						<button type="submit" tabindex="4" class="btn btn-primary">Login</button>
+						<a href="#" tabindex="5" class="btn pull-left btn-link text-muted">忘记密码？</a>
+						<a href="#" tabindex="6" class="btn btn-link text-muted">注册</a>
+						<button type="submit" tabindex="4" class="btn btn-primary">登陆</button>
 					</div>
 				</form>
 			</div>
