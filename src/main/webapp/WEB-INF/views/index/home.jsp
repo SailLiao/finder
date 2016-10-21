@@ -3,19 +3,15 @@
 <html>
 <head>
 <title>帆</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script type="text/javascript" src="${root }/resources/js/jquery.min.js"></script>
-<script type="text/javascript" src="${root }/resources/js/bootstrap.min.js"></script>
-<link href="${root }/resources/css/bootstrap.min.css" rel="stylesheet">
-<link href="${root }/resources/css/home.css" rel="stylesheet">
+<%@ include file="../header.jsp"%>
 <script type="text/javascript">
 	$(function() {
 		$("a").click(function() {
 			var data = $(this).attr("data");
 			if (data) {
 				$("#iframePage").attr("src", '${root}' + data);
-				$("a").removeClass("active");
-				$(this).addClass("active");
+				$("li").removeClass("active");
+				$(this).parent().addClass("active");
 			}
 		})
 	})
@@ -132,7 +128,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="javascript:void(0)" data="/index/user">
 									<i class="glyphicon glyphicon-th-list"></i>
 									&nbsp;菜单管理
 								</a>
